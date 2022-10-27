@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorDataGrid", "BlazorDataGrid\BlazorDataGrid.csproj", "{494D3C32-3168-407C-8C7B-9FEC831AB2BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{494D3C32-3168-407C-8C7B-9FEC831AB2BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{494D3C32-3168-407C-8C7B-9FEC831AB2BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{494D3C32-3168-407C-8C7B-9FEC831AB2BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{494D3C32-3168-407C-8C7B-9FEC831AB2BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54554F68-4902-42C5-828F-BF4C6B6F9C68}
+	EndGlobalSection
+EndGlobal

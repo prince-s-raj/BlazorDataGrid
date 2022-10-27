@@ -1,0 +1,62 @@
+﻿@page "/"
+
+<PageTitle>Bazor dataGrid</PageTitle>
+
+<h1>Bazor data grid with Radzen</h1>
+<RadzenGrid @ref = "studentGrid" AllowFiltering = "true"
+					AllowPaging = "true"
+					AllowSorting = "true"
+					FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive"
+					Data = "@students"
+					TItem="Student" >
+		<Columns>
+			<RadzenGridColumn TItem = "Student" Property="SId" Title="Student ID"/>
+			<RadzenGridColumn TItem = "Student" Property="FirstName" Title="First Name"/>
+			<RadzenGridColumn TItem = "Student" Property="LastName" Title="Last Name"/>
+			<RadzenGridColumn TItem = "Student" Property="Age" Title="Age"/>
+			<RadzenGridColumn TItem = "Student" Property="Country" Title="Country"/>
+		</Columns>
+</RadzenGrid>
+
+@code{
+	RadzenGrid<Student> studentGrid;
+
+	List<Student> students = new List<Student>()
+	{
+		new Student(1001,"Steve", "Rogers", 80, "Brooklyn"),
+		new Student(1002,"John", "Abraham", 25, "Canada"),
+		new Student(1003,"Dhev", "Abhimnayu", 16, "India"),
+		new Student(1004,"James", "Dion", 29, "London"),
+		new Student(1005,"Dilshan", "Samara", 27, "Srilanka"),
+		new Student(1006,"Tony", "Stark", 83, "Los Engels"),
+		new Student(1007,"Kousalya", "Dimuthu", 23, "Thaivan"),
+		new Student(1008,"Rukshan", "Ayushan", 18, "France"),
+		new Student(1009,"James", "Robert", 19, "USA"),
+		new Student(1010,"Anura", "Sepestian", 16, "Russia"),
+	};
+
+	public class Student{
+		public int SId { get; set; }
+		public string FirstName { get; set; }
+		public string LastName { get; set; }
+		public int Age { get; set; }
+		public string Country { get; set; } 
+
+		//Default Constructor
+		public Student()
+		{
+
+		}
+
+		//Parameterized constructor
+		public Student(int sid, string FirstName, string LastName, int Age, string Country)
+		{
+			this.SId = sid;
+			this.FirstName = FirstName;
+			this.LastName = LastName;
+			this.Age = Age;
+			this.Country = Country;
+		}
+
+	}
+}
